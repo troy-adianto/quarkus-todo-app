@@ -71,6 +71,8 @@
           <execution>
             <goals>
               <goal>build</goal>
+              <goal>generate-code</goal>
+              <goal>generate-code-tests</goal>
             </goals>
           </execution>
         </executions>
@@ -137,6 +139,9 @@
           </plugin>
         </plugins>
       </build>
+      <properties>
+        <quarkus.package.type>native</quarkus.package.type>
+      </properties>
     </profile>
   </profiles>
 </project>
